@@ -15,3 +15,5 @@ Restart or quit XQuartz
 Inside the container
 
 `sudo chown -R tfuser /tmp`
+
+Note: it seems that mapping the volume `-v /tmp/.x11_unix:/tmp` may not be necessary (diamond GUI still works), in which case it is also not necessary to `sudo chown -R tfuser /tmp` inside the container.
