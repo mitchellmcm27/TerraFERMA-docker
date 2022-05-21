@@ -30,7 +30,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@v4
         with:
-          images: mitchellmcm27/terrafirma
+          images: mitchellmcm27/terraferma
       
       - name: Build and push Docker image
         uses: docker/build-push-action@v3
