@@ -10,7 +10,7 @@ Restart or quit XQuartz
 
 `xhost +localhost`
 
-`docker run -it -e DISPLAY=host.docker.internal:0 -v /tmp/.x11_unix:/tmp -v $PWD:/home/tfuser/shared mitchellmcm27/terrafirma:master`
+`docker run -it -e DISPLAY=host.docker.internal:0 -v /tmp/.x11_unix:/tmp -v $PWD:/home/tfuser/shared mitchellmcm27/terraferma:master`
 
 Inside the container
 
