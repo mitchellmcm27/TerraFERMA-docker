@@ -1,5 +1,3 @@
-Provides `mitchellmcm27/terraferma` image, based on `TerraFERMA/dev` but with `arm64` support added.
-
 ## MacOS (M1 chip)
 
 Download & install XQuartz
@@ -10,7 +8,7 @@ Restart or quit XQuartz
 
 `xhost +localhost`
 
-`docker run -it -e DISPLAY=host.docker.internal:0 -v /tmp/.x11_unix:/tmp -v $PWD:/home/tfuser/shared mitchellmcm27/terraferma:master`
+`docker run -it -e DISPLAY=host.docker.internal:0 -v /tmp/.x11_unix:/tmp -v $PWD:/home/tfuser/shared terraverma/dev`
 
 Inside the container
 
