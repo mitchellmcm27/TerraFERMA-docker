@@ -1,3 +1,9 @@
+[Official docs](https://terraferma.github.io/)
+
+[Wiki](https://github.com/terraferma/terraferma/wiki)
+
+[Installation](https://github.com/terraferma/terraferma/wiki/Installation#docker)
+
 ## MacOS (M1 chip)
 
 Download & install XQuartz
