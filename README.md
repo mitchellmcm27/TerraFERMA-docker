@@ -14,7 +14,7 @@ Restart or quit XQuartz
 
 `xhost +localhost`
 
-`docker run -it -e DISPLAY=host.docker.internal:0 -v /tmp/.x11_unix:/tmp -v $PWD:/home/tfuser/shared terraverma/dev`
+`docker run -it -e DISPLAY=host.docker.internal:0 -v /tmp/.x11_unix:/tmp -v $PWD:/home/tfuser/shared terraferma/dev`
 
 Inside the container
 
