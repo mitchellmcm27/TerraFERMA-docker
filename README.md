@@ -39,11 +39,21 @@ Run the Docker container: `docker run -it --rm -e DISPLAY -v /tmp/.X11-unix:/tmp
 
 Run `diamond` within the container to verify the GUI works.
 
-### VS Code
+### VS Code (version 1.85.2)
 
 As of now, the Linux image used by TerraFerma is only supported by VS Code versions <1.86 (e.g., 1.85.2 is good).
+Download older versions in "portable mode" (.zip or .tar.gz) so that your regular installation of VS Code is not affected.
 
-Open VS Code 1.85.2 and create a simple Dockerfile:
+Older versions are available here and can be downloaded by the appropriate URL: https://code.visualstudio.com/docs/supporting/faq#_previous-release-versions
+
+For Windows x64, the URL to download the .zip file is: https://update.code.visualstudio.com/1.85.2/win32-x64-archive/stable
+
+For macOS (Apple Silicon), the URL to download the .tar.gz file is: https://update.code.visualstudio.com/1.85.2/darwin-arm64/stable
+
+Instructions for installing the portable version of VS Code are here https://code.visualstudio.com/docs/editor/portable .
+Note that in Windows, this cannot be unzipped to Program Files or other system-wide directories. Instead, unzip the folder into the AppData directory, i.e., `C:\Users\{username}\AppData\Local\Programs\`
+
+In Windows (not WSL or Docker), open your working directory in VS Code 1.85.2 and create a simple Dockerfile:
 
 ```dockerfile
 FROM terraferma/dev
@@ -52,5 +62,3 @@ USER tfuser
 ```
 
 Choose to "Reopen in container", choose "existing Dockerfile", and it should work, including the `diamond` GUI.
-Cho
-
